@@ -12,7 +12,7 @@ body{
 #contactbook{
 
     /* background-color: black; */
-    height: 35vh;
+    height: 300px;
     width:100vw;
     display: flex;
     justify-content:center;
