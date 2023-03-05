@@ -11,7 +11,7 @@ body{
 
 #contactbook{
 
-    /* background-color: black; */
+    background-color: black;
     height: 300px;
     width:100vw;
     display: flex;
