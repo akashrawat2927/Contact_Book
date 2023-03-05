@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> <%= title %> </title>
+
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/958de95642.css" integrity="" crossorigin="anonymous"> -->
+
+
+
+    <link rel="stylesheet" href="/css/home.css" >
+    
+</head>
+<body>
+    <h1 id = "page-heading" >
+        <i class="fa fa-address-book"></i>
+        My Contacts List</h1>
+
+
+    <div id = "contactbook">
+
+
+         <ul style="list-style: none;" >
+
+            <% for(let i of contact_list ) {%>
+                <li id = "contactlist">
+                    <h3> <%= i.name %> </h3>
+                    <h4> <%= i.phone %> </h4>
+                </li>
+            
+             <%} %>
+
+         </ul>
+    
+
+
+    </div>
+
+    <br>
+
+    <div id="add_contact">
+       
+        
+        <div id = "newcontact">
+            <h2 style="margin-bottom: 0px;">Add New Contact</h2>
+    <form  action="/create-contact" method="POST">
+        <input style="display:block;margin: 2px;" type="text" name = 'name' placeholder="Enter Name" required>
+        <input style="display:block; margin: 2px;" type="number" name = 'phone' placeholder="Enter number" required>
+        <button style="display:block;margin:2px;" type="submit"> Add Contact</button>
+
+
+    </form>
+    </div>
+    </div>
+    <script type="text/javascript" src="/js/home.js">
+
+
+    </script>
+
+<script src="https://kit.fontawesome.com/958de95642.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
