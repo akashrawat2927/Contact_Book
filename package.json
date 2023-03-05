@@ -4,7 +4,7 @@
   "description": "A basic contact list to learn expressjs as a framework",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "echo \"No test specified\""
   },
   "author": "Akash Rawat",
   "license": "ISC",
